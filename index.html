@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PINGA Panel</title>
+<style>
+body{margin:0;background:#101010;color:white;font-family:Arial;text-align:center;padding:30px}
+button{background:#c40020;color:white;border:0;border-radius:10px;padding:14px;margin:8px;font-size:16px}
+#menu{display:none;background:#222;padding:20px;border-radius:15px}
+#float{position:fixed;right:15px;top:45%;border-radius:50%;padding:18px}
+</style>
+</head>
+<body>
+<h1>PINGA PANEL</h1>
+<p>Painel de ajustes visuais</p>
+<button id="float" onclick="abrir()">P</button>
+<div id="menu">
+<h2>Menu PINGA</h2>
+<p>Sensibilidade</p>
+<input type="range" min="0" max="100" value="50">
+<p>Botão de tiro</p>
+<input type="range" min="0" max="100" value="50">
+<br>
+<button onclick="jogar()">Abrir Free Fire MAX</button>
+<button onclick="fechar()">Fechar menu</button>
+</div>
+<script>
+function abrir(){document.getElementById('menu').style.display='block'}
+function fechar(){document.getElementById('menu').style.display='none'}
+function jogar(){window.location.href='intent://#Intent;package=com.dts.freefiremax;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end'}
+</script>
+</body>
+</html>
