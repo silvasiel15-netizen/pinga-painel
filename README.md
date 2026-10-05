@@ -1,0 +1,1 @@
+Painel PINGA para Chrome
